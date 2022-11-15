@@ -4,7 +4,7 @@ let timeOutRef;
 
 function main() {
     //start på programmet
-    timeOutRef = setTimeout(changeBackgroundColor, 1000);
+    timeoutRef = setTimeout(changeBackgroundColor, 1000);
     setupEventListener();
 }
 
@@ -24,7 +24,7 @@ function setupEventListener() {
 }
 
 function cancelBackgroundChange() {
-    clearTimeOut(timeOutRef);
+    clearTimeout(timeoutRef);
 }
 
 function startBackgroundChangeInterval() {
