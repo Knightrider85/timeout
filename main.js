@@ -20,14 +20,14 @@ function setupEventListener() {
     button.addEventListener("click", cancelBackgroundChange);
 
     const startIntervalButton = document.getElementById("start-interval");
-    setIntervalButton.addEventListener("click", startBackgroundChangInterval)
+    startIntervalButton.addEventListener("click", startBackgroundChangInterval)
 }
 
 function cancelBackgroundChange() {
-    clearTimeout(timeOutRef);
+    clearTimeOut(timeOutRef);
 }
 
-function startBackgroundChangInterval() {
+function startBackgroundChangeInterval() {
     setInterval(changeBackgroundColor, 1000);
 }
 
